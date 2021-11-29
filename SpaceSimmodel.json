@@ -1,0 +1,44 @@
+{
+    "inputNeurons":
+    [
+        {
+            "$TYPE": "Altitude"
+        },
+        {
+            "$TYPE": "Speed"
+        },
+        {
+            "$TYPE": "Angle"
+        },
+        {
+            "$TYPE": "Fuel"
+        }
+    ],
+    "activators":
+    [
+        "Swish",
+        "Relu",
+        "Sigmoid"
+    ],
+    "outputNeurons":
+    [
+        {
+            "$TYPE": "ThrustVectorLeft"
+        },
+        {
+            "$TYPE": "ThrustVectorRight"
+        },
+        {
+            "$TYPE": "ThrottleUp"
+        },
+        {
+            "$TYPE": "ThrottleDown"
+        },
+        {
+            "$TYPE": "LandingLegDeploy"
+        },
+        {
+            "$TYPE": "LandingLegRetract"
+        }
+    ]
+}
