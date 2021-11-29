@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Rocket.png" type="Texture" id=1]
 [ext_resource path="res://RocketNoLegs.png" type="Texture" id=2]
-[ext_resource path="res://scripts/RocketNoLandingLegs.cs" type="Script" id=3]
 
 [node name="Node2D" type="Node2D"]
 
@@ -17,7 +16,6 @@ polygon = PoolVector2Array( -1, -521, 71, -428, 84, -326, 105, -224, 90, -177, 9
 
 [node name="RocketNoLandingLegs" type="Sprite" parent="."]
 texture = ExtResource( 2 )
-script = ExtResource( 3 )
 
 [node name="RigidBody2D" type="RigidBody2D" parent="RocketNoLandingLegs"]
 
