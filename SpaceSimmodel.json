@@ -12,6 +12,12 @@
         },
         {
             "$TYPE": "Fuel"
+        },
+        {
+            "$TYPE": "PositionXRelativeToLandingSite"
+        },
+        {
+            "$TYPE": "PositionYRelativeToLandingSite"
         }
     ],
     "activators":
