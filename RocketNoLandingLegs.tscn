@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://RocketNoLegs.png" type="Texture" id=1]
+[ext_resource path="res://scripts/RocketNoLandingLegs.cs" type="Script" id=2]
+
+[node name="RocketNoLegs" type="RigidBody2D"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -25, 18, -90, 465, -37, 461, -42, 507, -8, 493, 35, 501, 37, 467, 94, 467, 92, 35, 90, -173, 100, -179, 105, -221, 88, -243, 90, -300, 60, -425, 16, -497, -1, -503, -63, -416, -92, -236, -103, -224, -103, -196, -99, -164, -92, 465 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 10, 10 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
